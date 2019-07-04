@@ -18,7 +18,7 @@
             <RowDefinition Height="100" />
         </Grid.RowDefinitions>
         <Grid Grid.Column="0" Grid.Row="0">
-            <editor:TextEditor Name="editor" ShowLineNumbers="True" SyntaxHighlighting="C#" FontFamily="Consolas" FontSize="10pt" Text="">
+            <editor:TextEditor Name="editor" Margin="5" ShowLineNumbers="True" SyntaxHighlighting="C#" FontFamily="Consolas" FontSize="10pt" Text="">
             </editor:TextEditor>
         </Grid>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
@@ -27,5 +27,11 @@
         <Grid Grid.Row="2" Margin="5">
             <TextBox Name="DiagnosticTextBox" />
         </Grid>
+        <Grid Grid.Column="1" Grid.Row="0">
+            <ListBox Name="ResultListBox" Margin="5" />
+        </Grid>
+        <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Name="ExcuteButton" Margin="10,10,10,10" Content="Excute" Width="100" Click="ExcuteButton_Click" />
+        </StackPanel>
     </Grid>
 </Window>

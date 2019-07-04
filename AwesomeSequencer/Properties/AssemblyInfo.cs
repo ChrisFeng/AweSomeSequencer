@@ -1,6 +1,4 @@
 ﻿using System.Reflection;
-using System.Resources;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Windows;
 
@@ -23,13 +21,12 @@ using System.Windows;
 
 //若要開始建置可當地語系化的應用程式，請在
 //.csproj 檔案中的 <UICulture>CultureYouAreCodingWith</UICulture>
-//<UICulture>CultureYouAreCodingWith</UICulture>。例如，如果原始程式檔使用美式英文， 
+//<UICulture>CultureYouAreCodingWith</UICulture>。例如，如果原始程式檔使用美式英文，
 //請將 <UICulture> 設為 en-US。然後取消註解下列
 //NeutralResourceLanguage 屬性。在下一行中更新 "en-US"，
 //以符合專案檔中的 UICulture 設定。
 
 //[assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
-
 
 [assembly: ThemeInfo(
     ResourceDictionaryLocation.None, //主題特定資源字典的位置
@@ -40,8 +37,7 @@ using System.Windows;
                                               // 或是應用程式或任何主題特定資源字典中找不到資源時)
 )]
 
-
-// 組件的版本資訊由下列四個值所組成: 
+// 組件的版本資訊由下列四個值所組成:
 //
 //      主要版本
 //      次要版本
@@ -49,7 +45,7 @@ using System.Windows;
 //      修訂編號
 //
 // 您可以指定所有的值，或將組建編號或修訂編號設為預設值
-// 指定為預設值: 
+// 指定為預設值:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
